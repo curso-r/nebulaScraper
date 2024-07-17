@@ -47,3 +47,5 @@ usethis::use_data(nebula_tidy, overwrite = TRUE)
 
 
 View(nebula_tidy)
+piggyback::pb_release_create(tag = "html")
+piggyback::pb_upload("data-raw/html_ano.zip", tag = "html")
